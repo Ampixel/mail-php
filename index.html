@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form action="traitement.php" method="post">
+        <fieldset>
+            <legend>Envoie d'un formulaire</legend>
+            <table>
+                <tr>
+                    <td><label>Nom : </label>
+                    </td>
+                    <td><input type="text" name="lastname" id="lastname" required> <i class="fa fa-user"></i></td>
+                </tr>
+                <tr>
+                    <td><label>Prénom : </label></td>
+                    <td><input type="text" name="firstname" id="firstname"> <i class="fa fa-user"></i></td>
+                </tr>
+                <tr>
+                    <td><label>Email : </label></td>
+                    <td><input type="email" name="mail" id="mail" required> <i class="fa fa-envelope"></i></td>
+                </tr>
+                <tr>
+                    <td><label>Téléphone : </label></td>
+                    <td><input type="tel" name="phone" id="phone" pattern="^0[1-9][0-9]{8}$"> <i
+                            class="fa fa-phone"></i></td>
+                </tr>
+                <tr>
+                    <td><label>Objet : </label></td>
+                    <td><textarea name="subject" id="subject">ici votre demande</textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="send" id="send" value="Envoyer"></td>
+                    <td><input type="reset" name="reset" id="reset" value="Annuler"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
